@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Problem Statement:</h2>
+
+  <div class="instructions">
+    <h3>Instructions of the Game:</h3>
+    <ul>
+      <li>Guess the Number by moving the slider</li>
+      <li>Color changes to <span class="yellow">Yellow</span> if the guessed number is smaller</li>
+      <li>Color changes to <span class="red">Red</span> if the guessed number is greater</li>
+      <li>Color changes to <span class="green">Green</span> if the guessed number is correct</li>
+      <li>Maximum Attempts allowed is <b>6</b></li>
+    </ul>
+  </div>
+
+  <div class="game-container">
+    <input type="range" id="slider" min="1" max="10" value="5">
+    <div class="numbers" id="numbers"></div>
+    <p id="attempt"></p>
+    <p id="result"></p>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
